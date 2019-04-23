@@ -1,0 +1,308 @@
+/*
+CTC Separate Stylesheet
+Cole for Virginia - Tech for Campaigns
+*/
+body, button, h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+p {
+	font-family: "OpenSans", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-weight: 700;
+}
+body.default .has-red-background-color, body.default body.default .has-red-background-color, body.default body.established .has-red-background-color, body.default body.youthful .has-red-background-color {
+    background-color: #00c961;
+}
+body.default #pre-footer {
+    background-color: #00c961;
+}
+body.custom #content .has-main-text-color,
+body.custom #content .has-footer-color,
+.is-navy-text {
+	color: #00052d;
+}
+.entry-header {
+	background-color: #E5E6EA;
+}
+.entry-title {
+	color: #00052d;
+}
+#primary-menu a {
+	font-weight: 400;
+}
+.main-navigation li.menu-donate-button {
+    background-color: #00c961;    
+	border: 1px solid #00c961;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+	color: #fff;
+	cursor: pointer;
+    padding: 0.5em 2.5em;
+}
+.main-navigation li.menu-donate-button:hover {
+	background-color: #00b155;
+	text-decoration: underline;
+}
+body.custom .main-navigation li.menu-donate-button > a, 
+body.custom .main-navigation li.menu-donate-button > a:hover {
+    color: #fff;
+}
+.accent-color-fg {
+    color: #00c961;
+}
+.accent-color-bg {
+    background-color: #00c961;
+}
+.full-width, .home-donation-block {
+    margin-right: -50vw;
+    margin-left: -50vw;
+    width: 100vw;
+    max-width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+.home-donation-block {
+	padding-bottom: 5em;
+	padding-top: 5em;
+}
+.home-donation-block-headline {
+	padding-bottom: 18px;
+}
+.home-donation-block .buttons {
+	justify-content: center;
+}
+.home-donation-block .button {
+	max-width: 200px;
+}
+.wp-block-tfc-blocks-actblue a.button.other-amount,
+.wp-block-tfc-blocks-actblue a.button.amount {
+		color: #00052d;
+}
+/* expanded width on home and endorsement pages */
+.home .page .entry-content,
+.page-id-835 .entry-content {
+	max-width: 990px;
+}
+.home article {
+	background-color: #e5e6ea;
+}
+.home-hero-image .ugb-container__wrapper {
+	max-width: 990px;
+	margin: 0 auto;
+}
+.home-summary p {
+	text-align: center;
+}
+.entry-content > div.home-donation-block {
+    background-color: #00052d !important;
+	margin-bottom: 0;
+}
+.home-hero-image {
+	background-position: 60% top;
+	height: 700px;
+}
+.home-hero-text {
+    color: #fff;
+	font-size: 50px;
+	max-width: 500px;
+	padding-bottom: 20px;
+	padding-top: 160px;
+}
+.home-hero-action-button a {
+	padding: 13px 50px;
+}
+.home-hero-action-button a:hover {
+	background-color: #00B155;
+	text-decoration: none;
+}
+.home-feature-block {
+	font-size: 21px;
+	line-height: 36px;
+}
+.wp-block-pullquote.is-style-solid-color.home-quote,
+.wp-block-pullquote.is-style-solid-color.home-testimonial {
+	background-color: #e5e6ea !important;
+	max-width: 70%;
+	padding-bottom: 5em;
+	padding-top: 5em;
+}
+@media screen and (max-width: 782px) {
+	.wp-block-pullquote.is-style-solid-color.home-quote,
+	.wp-block-pullquote.is-style-solid-color.home-testimonial {
+		max-width: 85%;
+	}
+}
+.home-testimonial p,
+.bio-lead-quote,
+.endorsement-testimonial {
+	quotes: "\201C""\201D""\2018""\2019";
+}
+.home-testimonial p:before,
+.bio-lead-quote p:before,
+.endorsement-testimonial p:before {
+	color: #00c961;
+	content: open-quote;
+	font-size: 300%;
+	line-height: 0;
+	margin-left: -42px;
+	position: relative;
+	top: 30px;	
+}
+.entry-content > div.meet-josh-block {
+	margin-bottom: 0;
+}
+.home-platform-headline {
+	margin-bottom: 0;
+}
+.entry-content > p.platform-subtitle {
+	color: #00052d;
+	margin: 0.5em auto 2em;
+	max-width: 70%;
+}
+@media screen and (max-width: 782px) {
+	.entry-content > p.platform-subtitle {
+		max-width: 85%;
+	}	
+}
+.entry-content div.home-platform-items {
+	margin-bottom: 1em;
+}
+.entry-content div.home-platform-items .wp-block-column {
+	background-color: white;
+}
+.home-platform-item a,
+.platform-item a {
+	color: #00c961  !important;
+	display: block;
+	font-size: 16px;
+	margin-top: 0.5em;
+}
+.platform-button a.wp-block-button__link {
+	background-color: #00c961;
+	margin-bottom: 13px;
+	margin-top: 30px;
+	padding: 13px 50px;
+}
+.get-involved {
+	background-color: white;
+	border: 1px solid #aaa;
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 1em 2em;
+}
+#get-involved-form label,
+#get-involved-form input {
+	color: #aaa;
+	width: 100%;
+}
+#get-involved-form input[type="submit"] {
+	background-color: #00c961;
+	color: #fff;
+	margin: 2em 0;
+	padding: 1em 0;
+}
+
+.learn-more a {
+	color: #00c961 !important;
+}
+/* PLATFORM PAGE */
+.page-id-14 .entry-content {
+	max-width: 990px;
+}
+.page-id-14 .entry-content>div.platform-columns:first-of-type {
+	margin-top: 5em;
+}
+.page-id-14 .entry-content>div.platform-columns:last-of-type {
+	margin-bottom: 8em;
+}
+.page-id-14 .entry-content>div.platform-columns {
+	margin-bottom: 3em;
+}
+.page-id-14 .entry-content>div.platform-columns .wp-block-ugb-container {
+	padding: 2em 3em;
+}
+.platform-columns > div {
+	background-color: #f1f1f1;
+}
+.ugb-container.platform-image-box {
+	background-position: 50% 10%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin: 0;
+}
+@media screen and (max-width: 782px) {
+	.page-id-14 .entry-content>div.platform-columns .wp-block-ugb-container {
+		padding: 2em;
+	}
+	.page-id-14 .entry-content .wp-block-columns .wp-block-column {
+		margin: 0 1.5em;
+	}
+	.ugb-container.platform-image-box {
+		min-height: 250px;
+	}
+}
+/* ENDORSEMENTS PAGE */
+.endorsement-block img {
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.endorsement-block .wp-block-tfc-blocks-issues .description-wrapper h3 {
+	margin-bottom: 0;
+}
+.endorsement-block p {
+	margin-top: 0;
+}
+.wp-block-pullquote.is-style-solid-color.endorsement-testimonial {
+	max-width: 70%;
+	padding-bottom: 5em;
+	padding-top: 0;	
+}
+/* FOOTER */
+#pre-footer {
+	background-color: #00c961;
+}
+#pre-footer input[type="submit"] {
+    color: #00052d;
+    background-color: #fff;
+}
+#mc4wp_form_widget-2 {
+	color: #00052d;
+}
+#colophon {
+    background-color: #00052d;
+}
+#colophon #nav_menu-3 a {
+	font-weight: 400;
+}
+#colophon .widget-title a {
+	color: #9b9ea7;
+}
+#colophon .footer-contact {
+	line-height: 24px;
+	margin-left: 8px;
+	padding-top: 10px;
+}
+#colophon .footer-contact a {
+	color: #9b9ea7;
+	font-weight: 400;
+}
+#menu-tfc-top-menu a:hover {
+	text-decoration: none;
+}
+#menu-tfc-top-menu a:hover:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
