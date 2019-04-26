@@ -28,6 +28,9 @@ body.custom #content .has-footer-color,
 .entry-title {
 	color: #00052d;
 }
+.has-medium-font-size {
+	line-height: 2em;
+}
 #primary-menu a {
 	font-weight: 400;
 }
@@ -44,11 +47,12 @@ body.custom #content .has-footer-color,
 }
 .main-navigation li.menu-donate-button:hover {
 	background-color: #00b155;
-	text-decoration: underline;
+	text-decoration: none;
 }
 body.custom .main-navigation li.menu-donate-button > a, 
 body.custom .main-navigation li.menu-donate-button > a:hover {
     color: #fff;
+	text-decoration: none;
 }
 .accent-color-fg {
     color: #00c961;
@@ -75,8 +79,9 @@ body.custom .main-navigation li.menu-donate-button > a:hover {
 .home-donation-block .buttons {
 	justify-content: center;
 }
-.home-donation-block .button {
+.home-donation-block a.button {
 	max-width: 200px;
+	font-family: "Raleway", "HelveticaNeue", Helvetica, Arial, sans-serif;
 }
 .wp-block-tfc-blocks-actblue a.button.other-amount,
 .wp-block-tfc-blocks-actblue a.button.amount {
@@ -113,6 +118,7 @@ body.custom .main-navigation li.menu-donate-button > a:hover {
 	padding-top: 160px;
 }
 .home-hero-action-button a {
+	font-size: 1em;
 	padding: 13px 50px;
 }
 .home-hero-action-button a:hover {
@@ -127,8 +133,10 @@ body.custom .main-navigation li.menu-donate-button > a:hover {
 .wp-block-pullquote.is-style-solid-color.home-testimonial {
 	background-color: #e5e6ea !important;
 	max-width: 70%;
-	padding-bottom: 5em;
-	padding-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 8em;
+	padding-top: 8em;
 }
 @media screen and (max-width: 782px) {
 	.wp-block-pullquote.is-style-solid-color.home-quote,
@@ -141,17 +149,6 @@ body.custom .main-navigation li.menu-donate-button > a:hover {
 .endorsement-testimonial {
 	quotes: "\201C""\201D""\2018""\2019";
 }
-.home-testimonial p:before,
-.bio-lead-quote p:before,
-.endorsement-testimonial p:before {
-	color: #00c961;
-	content: open-quote;
-	font-size: 300%;
-	line-height: 0;
-	margin-left: -42px;
-	position: relative;
-	top: 30px;	
-}
 .entry-content > div.meet-josh-block {
 	margin-bottom: 0;
 }
@@ -160,29 +157,47 @@ body.custom .main-navigation li.menu-donate-button > a:hover {
 }
 .entry-content > p.platform-subtitle {
 	color: #00052d;
-	margin: 0.5em auto 2em;
+	margin: 0.5em auto 3em;
 	max-width: 70%;
 }
 @media screen and (max-width: 782px) {
+	.entry-header .title-meta {
+		padding: 100px 40px 40px;
+	}
+	.entry-content .wp-block-columns.has-3-columns .wp-block-column:first-child,
+	.entry-content .wp-block-columns.has-3-columns .wp-block-column:last-child {
+		margin-left: .5em;
+		margin-right: .5em;
+	}
 	.entry-content > p.platform-subtitle {
 		max-width: 85%;
 	}	
 }
 .entry-content div.home-platform-items {
-	margin-bottom: 1em;
+	margin-bottom: 1.25em;
 }
 .entry-content div.home-platform-items .wp-block-column {
 	background-color: white;
+}
+p.home-platform-item {
+	font-family: "Raleway", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
 }
 .home-platform-item a,
 .platform-item a {
 	color: #00c961  !important;
 	display: block;
+	font-family: "OpenSans", "HelveticaNeue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
+	font-weight: normal;
 	margin-top: 0.5em;
+}
+.entry-content>div.platform-button {
+	margin-bottom: 5em;
 }
 .platform-button a.wp-block-button__link {
 	background-color: #00c961;
+	font-size: 1em;
 	margin-bottom: 13px;
 	margin-top: 30px;
 	padding: 13px 50px;
@@ -208,6 +223,9 @@ body.custom .main-navigation li.menu-donate-button > a:hover {
 
 .learn-more a {
 	color: #00c961 !important;
+}
+.entry-content>p.last-graf {
+	margin-bottom: 6em;
 }
 /* PLATFORM PAGE */
 .page-id-14 .entry-content {
@@ -262,16 +280,140 @@ body.custom .main-navigation li.menu-donate-button > a:hover {
 	padding-bottom: 5em;
 	padding-top: 0;	
 }
+
+/* NGP-VAN VOLUNTEER FORM */
+.column-zero-margin .wp-block-columns {
+  margin: 20px 0;
+}
+
+.ngp-form.volunteer-form {
+	background-color: white;
+	border: 1px solid #aaa;
+	margin: 0 auto;
+	max-width: 400px!important;
+	padding: 1em 2em;
+}
+
+.ngp-form.volunteer-form .at-title {
+    display: none;
+}
+
+.ngp-form.volunteer-form .HeaderHtml {
+    display: none;
+}
+
+.ngp-form.volunteer-form .poweredby {
+    display: none!important;
+}
+
+.ngp-form.volunteer-form .at label {
+    color: #929292!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    font-size: 16px!important;
+		font-family: "OpenSans", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+
+.ngp-form.volunteer-form .at input[type=text], .at input[type=email], .at input[type=tel] {
+    border-radius: 4px!important;
+    padding: 15px 20px!important;
+    line-height: 1!important;
+    color: #aaa!important;
+    font-size: 16px!important;
+    height: auto!important;
+	  border: 1px solid #CCC!important;
+}
+
+.ngp-form.volunteer-form .at fieldset legend {
+    color: #171a1c!important;
+    font-size: 28px!important;
+		font-family: "Raleway", "HelveticaNeue", Helvetica, Arial, sans-serif!important;
+    font-weight: 700!important;
+    margin: 0.625rem 0!important;
+}
+
+.ngp-form.volunteer-form .at-form-submit .at-submit {
+    background-color: #00c961!important;
+    color: #fff!important;
+    margin: 0 0!important;
+    padding: 1em 0!important;
+    width: 100%!important;
+    border-radius: 1.5em!important;
+    font-size: 16px!important;
+	  font-family: "Raleway", "HelveticaNeue", Helvetica, Arial, sans-serif!important;
+}
+
+
+.ngp-form.volunteer-form .get-involved {
+	background-color: white;
+	border: 1px solid #aaa;
+	margin: 0 auto;
+	max-width: 400px;
+	padding: 1em 2em;
+}
+#get-involved-form label,
+#get-involved-form input {
+	color: #aaa;
+	width: 100%;
+}
+#get-involved-form input[type="submit"] {
+	background-color: #00c961;
+	color: #fff;
+	margin: 2em 0;
+	padding: 1em 0;
+}
+
+.ngp-form.volunteer-form .thankYou {
+    text-align: center;
+    font-family: "Raleway";
+    color: #00052e;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+
 /* FOOTER */
 #pre-footer {
 	background-color: #00c961;
 }
-#pre-footer input[type="submit"] {
-    color: #00052d;
-    background-color: #fff;
+.ngp-form.email-form .at-inner {
+	background-color: #00c961;
+	font-family: "Raleway", "HelveticaNeue", Helvetica, Arial, sans-serif;
+
 }
-#mc4wp_form_widget-2 {
+.ngp-form.email-form .at-title,
+.ngp-form.email-form .at-legend {
+	display: none;
+}
+.ngp-form.email-form input[type="email"] {
+/* 	display: inline-block; */
+	max-width: 250px;
+	margin: 0 auto;
+}
+.ngp-form.email-form label.EmailAddress:before {
 	color: #00052d;
+	content: "Stay Informed. Stay Engaged.";
+	display: block;
+	font-size: 21px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.ngp-form.email-form .at-form-submit .at-submit {
+	float: none;
+	margin: 0;
+}
+.ngp-form.email-form .at-submit.btn-at {
+	background-color: white;
+	border-radius: 24px !important;
+	font-size: 16px;
+	font-family: "Raleway", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+.ngp-form.email-form .at-submit.btn-at:hover {
+	background-color: #fafafa;
+}
+.ngp-form.email-form .at-fieldset {
+	min-width: inherit; 
 }
 #colophon {
     background-color: #00052d;
@@ -305,4 +447,3 @@ body.custom .main-navigation li.menu-donate-button > a:hover {
     border-width: 0 0 1px;
     border-style: solid;
 }
-
